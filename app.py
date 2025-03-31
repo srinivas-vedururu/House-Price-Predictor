@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 import joblib
 
-scaler = joblib.load("loaded_joblib_files\\Scaler.joblib")
-encoder = joblib.load("loaded_joblib_files\\Encoder.joblib")
-model = joblib.load("loaded_joblib_files\\Model.joblib")
+scaler = joblib.load("loaded_joblib_files/Scaler.joblib")
+encoder = joblib.load("loaded_joblib_files/Encoder.joblib")
+model = joblib.load("loaded_joblib_files/Model.joblib")
 
 # Streamlit UI
 st.title("House Price Predictor")
