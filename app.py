@@ -52,7 +52,7 @@ num_cols = ['SquareFeet', 'Bedrooms', 'Bathrooms', 'YearBuilt', 'Age', 'SqFt_Per
 cat_cols = ['Neighborhood', 'Home_Size_Category']
 
 single_input[num_cols] = scaler.transform(single_input[num_cols])
-encoded_cols = joblib.load("loaded_joblib_files\Encoded_cols.joblib")
+encoded_cols = joblib.load("loaded_joblib_files/Encoded_cols.joblib")
 single_input[encoded_cols] = encoder.transform(single_input[cat_cols])
 single_input = single_input[num_cols+encoded_cols]
 
