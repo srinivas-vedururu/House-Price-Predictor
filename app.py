@@ -4,9 +4,9 @@ import pandas as pd
 import joblib
 
 # Load trained model and preprocessors (Assuming these are pre-trained and available)
-scaler = joblib.load("Scaler.joblib")
-encoder = joblib.load("Encoder.joblib")
-model = joblib.load("Model.joblib")
+scaler = joblib.load("loaded_joblib_files\Scaler.joblib")
+encoder = joblib.load("loaded_joblib_files\Encoder.joblib")
+model = joblib.load("loaded_joblib_files\Model.joblib")
 
 # Streamlit UI
 st.title("House Price Predictor")
@@ -54,7 +54,7 @@ num_cols = ['SquareFeet', 'Bedrooms', 'Bathrooms', 'YearBuilt', 'Age', 'SqFt_Per
 cat_cols = ['Neighborhood', 'Home_Size_Category']
 
 single_input[num_cols] = scaler.transform(single_input[num_cols])
-encoded_cols = joblib.load("Encoded_cols.joblib")
+encoded_cols = joblib.load("loaded_joblib_files\Encoded_cols.joblib")
 single_input[encoded_cols] = encoder.transform(single_input[cat_cols])
 single_input = single_input[num_cols+encoded_cols]
 
