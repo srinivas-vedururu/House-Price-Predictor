@@ -3,10 +3,9 @@ import numpy as np
 import pandas as pd
 import joblib
 
-# Load trained model and preprocessors (Assuming these are pre-trained and available)
-scaler = joblib.load("loaded_joblib_files\Scaler.joblib")
-encoder = joblib.load("loaded_joblib_files\Encoder.joblib")
-model = joblib.load("loaded_joblib_files\Model.joblib")
+scaler = joblib.load("loaded_joblib_files\\Scaler.joblib")
+encoder = joblib.load("loaded_joblib_files\\Encoder.joblib")
+model = joblib.load("loaded_joblib_files\\Model.joblib")
 
 # Streamlit UI
 st.title("House Price Predictor")
@@ -49,7 +48,6 @@ single_input = pd.DataFrame({
     'Home_Size_Category': [home_size_category]
 })
 
-# Assume numerical and categorical preprocessing is already fitted
 num_cols = ['SquareFeet', 'Bedrooms', 'Bathrooms', 'YearBuilt', 'Age', 'SqFt_Per_Bedroom', 'Bed_Bath_Ratio', 'Log_SquareFeet', 'Total_Rooms', 'Bed_Bath_Interaction']
 cat_cols = ['Neighborhood', 'Home_Size_Category']
 
