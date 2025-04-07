@@ -2,6 +2,10 @@
 
 This project is a machine learning model that predicts house prices based on input features. It includes data preprocessing, encoding categorical features, scaling numerical features, and training a predictive model.
 
+# 💻Working Demo 
+## My Streamlit App
+Try out my Streamlit app: [House Price Predictor](https://srinivas-vedururu-house-price-predictor-app-6n8g90.streamlit.app/)
+
 ## Files
 - `app.py` - It is The File Which Contains the deployment part of this project which is powered by Streamlit.
 - `house_price_predictor.ipynb` - Jupyter Notebook containing data preprocessing, model training, and evaluation.
@@ -43,6 +47,6 @@ Ensure that you have installed all the requirements which are listed in the requ
 
 
 <div align="center">  
-  <h2><b>Thank You</b></h2>  
+  <h2><b>Thank You!</b></h2>  
 </div>
 
